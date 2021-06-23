@@ -1,0 +1,388 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ---------------------------------------------------------- Main css -------------------------------------------------------------*/
+body{
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+/* ------------------------------------------------- for mobiles -------------------------------------------------------------------- */
+@media(max-width: 900px){
+    /* ---------------------------------- NAV BAR ---------------------------- */
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon-about{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0.5em;
+        padding: 1em;
+    }
+    .nav1 a{
+        margin-top: 0.5em;
+        padding: 1em;
+        border-bottom: 1px solid #adb5bd;
+        color: #adb5bd;
+        font-size: 1em;
+        text-decoration: none;
+        transform: translateY(103px);
+    }
+    .nav1 input{
+        margin-top: 0.5em;
+        border: none;
+        border-bottom: 1px solid #adb5bd;
+        padding: 0.8em 1em;
+        font-size: 1em;
+    }
+    .nav1 input::placeholder{
+        font-family: 'Roboto', sans-serif;
+        color: #adb5bd;
+        font-size: 1em;
+    }
+    input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+    .nav-bar h3{
+        margin-top: 0.5em;
+        /* border-bottom: 1px solid #adb5bd; */
+        padding: 0.8em 1em;
+        font-size: 1em;
+        font-weight: bold;
+        transform: translateY(-103px);
+    }
+    .material-icons-outlined{
+        color: #adb5bd;
+        size: 2px;
+        margin-right: 1em;
+    
+    }
+    .icon-about a{
+        text-decoration: none;
+        color: #adb5bd;
+        font-size: 1em;
+        padding-left: 1em;
+    }
+
+    /* ------------------------- main book store ---------------------------- */
+    main{
+        margin-top: 1em;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    .books{
+        display: flex;
+        flex-direction: row;
+        background-color: #cbb5e2;
+        border-radius: 10px;
+        margin-bottom: 3em;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    }
+    .books:nth-of-type(2){
+        background-color: #fbadaf;
+    }
+    .books:nth-of-type(3){
+        background-color: #a4e0eb;
+    }
+    .books:nth-of-type(4){
+        background-color: #fdca95;
+    }
+    .book-img{
+        width: 100%;
+        max-width: 1000px;
+        margin: 1.5em;
+        border-radius: 3px;
+        transition: transform 1s;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+    .book-img:hover{
+        transform: scale(1.05);
+    }
+    .descp{
+        margin: 1.5em;
+        padding: 1em;
+        
+    }
+    .book-name{
+        font-weight: bold;
+        padding-bottom: 0.5em;
+        font-size: 1.1em;
+        letter-spacing: 1px;
+        color: white;
+    }
+    .author{
+        padding-bottom: 0.5em;
+        font-size: 1.1em;
+        letter-spacing: 1px;
+        color: white;
+    }
+    .rating{
+        padding-bottom: 1.2em;
+        font-size: 1em;
+        letter-spacing: 1px;
+        color: white;
+    }
+    .info{
+        font-size: 1em;
+        letter-spacing: 1px;
+        color: white;
+    }
+    .descp button{
+        margin-top: 1em;
+        background: none;
+        border: none;
+        color: #cbb5e2;
+        background-color: white;
+        padding: 0.6em 1.5em;
+        font-size: 1em;
+        border-radius: 20px;
+        font-weight: bolder;
+    }
+    .descp button:hover{
+        color: #a790f2;
+    }
+    #b1{
+        color: #fbadaf;
+    }
+    #b1:hover{
+        color: #ff6e9f;
+    }
+    #b2{
+        color: #a4e0eb;
+    }
+    #b2:hover{
+        color: #62cdec;
+    }
+    #b3{
+        color: #fdca95;
+    }
+    #b3:hover{
+        color: #fb9124;
+    }
+
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------- fOR PC AND LAPTOPS -------------------------------------------- */
+@media(min-width: 900px){
+    /* ----------------------------------------------------- Navbar ---------------------------------------------------------- */
+    .nav-bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav1{
+        display: flex;
+        flex-direction: row;
+        margin-left: 1em;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+    .nav1 a{
+        padding: 1em;
+        border: none;
+        border-right: 1px solid #adb5bd;
+        color: #adb5bd;
+        font-size: 1em;
+        text-decoration: none;
+    }
+    .nav1 input{
+        border: none;
+        margin-left: 0.5em;
+        padding: 0.8em 1em;
+        font-size: 1em;
+    }
+    .nav1 input::placeholder{
+        font-family: 'Roboto', sans-serif;
+        color: #adb5bd;
+        font-size: 1em;
+    }
+    input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+    .nav-bar h3{
+        padding: 0.8em 1em;
+        margin-left: 1em;
+        margin-bottom: 1em;
+        margin-top: 1em;
+        font-size: 1em;
+        font-weight: bold;
+    }
+    .icon-about{
+        display: flex;
+        align-items: center;
+    }
+    .material-icons-outlined{
+        color: #adb5bd;
+        size: 2px;
+        margin-right: 1em;
+    
+    }
+    .icon-about a{
+        margin-right: 2em;
+        text-decoration: none;
+        color: #adb5bd;
+        font-size: 1em;
+        border-left: 1px solid #adb5bd;
+        padding-left: 1em;
+    }
+
+    /* ------------------- MAIN BOOKS ---------------------------------- */
+    main{
+        margin-top: 1em;
+        font-family: 'Noto Sans JP', sans-serif;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .books{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 600px;
+        justify-content: space-evenly;
+        background-color: #cbb5e2;
+        border-radius: 10px;
+        margin-bottom: 3em;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    }
+    .books:nth-of-type(2){
+        background-color: #fbadaf;
+    }
+    .books:nth-of-type(3){
+        background-color: #a4e0eb;
+    }
+    .books:nth-of-type(4){
+        background-color: #fdca95;
+    }
+    .book-img{
+        width: 100%;
+        max-width: 500px;
+        border-radius: 3px;
+        transition: transform 1s;
+        margin: 1.5em;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+    .book-img:hover{
+        transform: scale(1.05);
+    }
+    .descp{
+        margin: 1.5em;
+        padding: 1em;
+        
+    }
+    .book-name{
+        font-weight: bold;
+        padding-bottom: 0.5em;
+        font-size: 1.1em;
+        letter-spacing: 1px;
+        color: white;
+    }
+    .author{
+        padding-bottom: 0.5em;
+        font-size: 1.1em;
+        letter-spacing: 1px;
+        color: white;
+    }
+    .rating{
+        padding-bottom: 1.2em;
+        font-size: 1em;
+        letter-spacing: 1px;
+        color: white;
+    }
+    .info{
+        font-size: 1em;
+        letter-spacing: 1px;
+        color: white;
+    }
+    .descp button{
+        margin-top: 1em;
+        background: none;
+        border: none;
+        color: #cbb5e2;
+        background-color: white;
+        padding: 0.6em 1.5em;
+        font-size: 1em;
+        border-radius: 20px;
+        font-weight: bolder;
+    }
+    .descp button:hover{
+        color: #a790f2;
+    }
+    #b1{
+        color: #fbadaf;
+    }
+    #b1:hover{
+        color: #ff6e9f;
+    }
+    #b2{
+        color: #a4e0eb;
+    }
+    #b2:hover{
+        color: #62cdec;
+    }
+    #b3{
+        color: #fdca95;
+    }
+    #b3:hover{
+        color: #fb9124;
+    }
+
+
+    
+
+}

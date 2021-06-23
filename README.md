@@ -1,2 +1,2 @@
 # Bookstore-
-Frontend for online book store using HTML and CSS
+A Responsive Frontend for online book store using HTML and CSS
